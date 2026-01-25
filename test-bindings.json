@@ -1,0 +1,141 @@
+{
+    "key": "t",
+    "name": "+Test",
+    "icon": "beaker",
+    "type": "bindings",
+    "bindings": [
+        {
+            "key": "a",
+            "name": "Run all tests",
+            "icon": "beaker",
+            "type": "command",
+            "command": "testing.runAll"
+        },
+        {
+            "key": "A",
+            "name": "Debug all tests",
+            "icon": "bug",
+            "type": "command",
+            "command": "testing.debugAll"
+        },
+        {
+            "key": "b",
+            "name": "Run current test file",
+            "icon": "file",
+            "type": "command",
+            "command": "testing.runCurrentFile"
+        },
+        {
+            "key": "B",
+            "name": "Debug current test file",
+            "icon": "bug",
+            "type": "command",
+            "command": "testing.debugCurrentFile"
+        },
+        {
+            "key": "c",
+            "name": "Coverage test at cursor",
+            "icon": "coverage",
+            "type": "command",
+            "command": "testing.coverageAtCursor"
+        },
+        {
+            "key": "C",
+            "name": "Coverage all tests",
+            "icon": "coverage",
+            "type": "command",
+            "command": "testing.coverageAll"
+        },
+        {
+            "key": "d",
+            "name": "Discover/refresh tests",
+            "icon": "refresh",
+            "type": "command",
+            "command": "testing.refreshTests"
+        },
+        {
+            "key": "f",
+            "name": "Go to related test",
+            "icon": "beaker",
+            "type": "command",
+            "command": "testing.goToRelatedTest"
+        },
+        {
+            "key": "F",
+            "name": "Go to related code",
+            "icon": "code",
+            "type": "command",
+            "command": "testing.goToRelatedCode"
+        },
+        {
+            "key": "l",
+            "name": "Re-run last tests",
+            "icon": "history",
+            "type": "command",
+            "command": "testing.reRunLastRun"
+        },
+        {
+            "key": "L",
+            "name": "Debug last tests",
+            "icon": "bug",
+            "type": "command",
+            "command": "testing.debugLastRun"
+        },
+        {
+            "key": "o",
+            "name": "Show test output",
+            "icon": "output",
+            "type": "command",
+            "command": "testing.showMostRecentOutput"
+        },
+        {
+            "key": "p",
+            "name": "Configure test profiles",
+            "icon": "settings-gear",
+            "type": "command",
+            "command": "testing.configureProfile"
+        },
+        {
+            "key": "r",
+            "name": "Re-run failed tests",
+            "icon": "close",
+            "type": "command",
+            "command": "testing.reRunFailTests"
+        },
+        {
+            "key": "R",
+            "name": "Debug failed tests",
+            "icon": "bug",
+            "type": "command",
+            "command": "testing.debugFailTests"
+        },
+        {
+            "key": "s",
+            "name": "Stop/cancel test run",
+            "icon": "debug-stop",
+            "type": "command",
+            "command": "testing.cancelRun"
+        },
+        {
+            "key": "t",
+            "name": "Run test at cursor",
+            "icon": "play",
+            "type": "command",
+            "command": "testing.runAtCursor"
+        },
+        {
+            "key": "T",
+            "name": "Debug test at cursor",
+            "icon": "bug",
+            "type": "command",
+            "command": "testing.debugAtCursor"
+        },
+        {
+            "key": "x",
+            "name": "Clear test results",
+            "icon": "clear-all",
+            "type": "command",
+            "command": "testing.clearTestResults"
+        }
+    ]
+}
