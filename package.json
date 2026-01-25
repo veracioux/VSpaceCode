@@ -12821,6 +12821,8 @@
     },
     "scripts": {
         "vscode:prepublish": "webpack --mode production",
+        "package": "node_modules/vsce/vsce package",
+        "vscode:install": "rm -f *.vsix && npm run package && code --install-extension ./vspacecode-99.10.20-haris.vsix",
         "inject-test-bindings": "node ./scripts/inject-test-bindings.js",
         "compile": "webpack --mode development",
         "watch": "webpack --watch",
