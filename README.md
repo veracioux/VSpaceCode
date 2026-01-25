@@ -1,3 +1,20 @@
+# Customizations by @veracioux
+
+## Unified Test Bindings
+
+All language modes now share a unified set of test bindings under `SPC m t`
+(+Test). The bindings are defined in [`test-bindings.json`](test-bindings.json)
+and can be injected into all language sections in <package.json> using `npm run inject-test-bindings`.
+
+### Modifying Test Bindings
+
+To modify the test bindings:
+
+1. Edit [`test-bindings.json`](test-bindings.json)
+2. Run `npm run inject-test-bindings` to apply changes to all languages in `package.json`
+
+---
+
 # VSpaceCode (Preview)
 
 [![Docs](https://img.shields.io/website?label=vspacecode.github.io&url=https%3A%2F%2Fvspacecode.github.io)](https://vspacecode.github.io)
