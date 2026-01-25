@@ -56,12 +56,12 @@ jobs:
                   asset_name: ${{ steps.package.outputs.vsix_path }}
                   asset_content_type: application/zip
 
-            - name: Publish to VSCode Extension Marketplace
-              run: npx vsce publish --packagePath ${{ steps.package.outputs.vsix_path }}
-              env:
-                  VSCE_PAT: ${{ secrets.VSCE_TOKEN }}
+            # - name: Publish to VSCode Extension Marketplace
+            #   run: npx vsce publish --packagePath ${{ steps.package.outputs.vsix_path }}
+            #   env:
+            #       VSCE_PAT: ${{ secrets.VSCE_TOKEN }}
 
-            - name: Publish to Open VSX Registry
-              run: npx ovsx publish ${{ steps.package.outputs.vsix_path }}
-              env:
-                  OVSX_PAT: ${{ secrets.OVSX_TOKEN }}
+            # - name: Publish to Open VSX Registry
+            #   run: npx ovsx publish ${{ steps.package.outputs.vsix_path }}
+            #   env:
+            #       OVSX_PAT: ${{ secrets.OVSX_TOKEN }}
