@@ -768,10 +768,10 @@
                                     },
                                     {
                                         "key": "d",
-                                        "name": "Start debug",
+                                        "name": "Select and start debug",
                                         "icon": "debug-start",
                                         "type": "command",
-                                        "command": "workbench.action.debug.start"
+                                        "command": "workbench.action.debug.selectandstart"
                                     },
                                     {
                                         "key": "i",
@@ -6788,6 +6788,311 @@
                                         ]
                                     },
                                     {
+                                        "key": "languageId:javascriptreact",
+                                        "name": "JavaScript React",
+                                        "type": "bindings",
+                                        "bindings": [
+                                            {
+                                                "key": "=",
+                                                "name": "+Format",
+                                                "icon": "list-flat",
+                                                "type": "bindings",
+                                                "bindings": [
+                                                    {
+                                                        "key": "=",
+                                                        "name": "Format region or buffer",
+                                                        "icon": "list-flat",
+                                                        "type": "command",
+                                                        "command": "editor.action.format"
+                                                    },
+                                                    {
+                                                        "key": "b",
+                                                        "name": "Format buffer",
+                                                        "icon": "file",
+                                                        "type": "command",
+                                                        "command": "editor.action.formatDocument"
+                                                    },
+                                                    {
+                                                        "key": "c",
+                                                        "name": "Format changes",
+                                                        "icon": "diff",
+                                                        "type": "command",
+                                                        "command": "editor.action.formatChanges"
+                                                    },
+                                                    {
+                                                        "key": "s",
+                                                        "name": "Format selection",
+                                                        "icon": "selection",
+                                                        "type": "command",
+                                                        "command": "editor.action.formatSelection"
+                                                    },
+                                                    {
+                                                        "key": "B",
+                                                        "name": "+Format buffer with formatter",
+                                                        "icon": "file",
+                                                        "type": "command",
+                                                        "command": "editor.action.formatDocument.multiple"
+                                                    },
+                                                    {
+                                                        "key": "S",
+                                                        "name": "+Format selection with formatter",
+                                                        "icon": "selection",
+                                                        "type": "command",
+                                                        "command": "editor.action.formatSelection.multiple"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "key": "g",
+                                                "name": "+Go to",
+                                                "icon": "go-to-file",
+                                                "type": "bindings",
+                                                "bindings": [
+                                                    {
+                                                        "key": "d",
+                                                        "name": "Go to definition",
+                                                        "icon": "symbol-function",
+                                                        "type": "command",
+                                                        "command": "editor.action.revealDefinition"
+                                                    },
+                                                    {
+                                                        "key": "h",
+                                                        "name": "Show call hierarchy",
+                                                        "icon": "type-hierarchy",
+                                                        "type": "command",
+                                                        "command": "references-view.showCallHierarchy"
+                                                    },
+                                                    {
+                                                        "key": "r",
+                                                        "name": "Go to reference",
+                                                        "icon": "symbol-reference",
+                                                        "type": "command",
+                                                        "command": "editor.action.goToReferences"
+                                                    },
+                                                    {
+                                                        "key": "s",
+                                                        "name": "Go to symbol in buffer",
+                                                        "icon": "file",
+                                                        "type": "command",
+                                                        "command": "workbench.action.gotoSymbol"
+                                                    },
+                                                    {
+                                                        "key": "t",
+                                                        "name": "Go to type definition",
+                                                        "icon": "symbol-struct",
+                                                        "type": "command",
+                                                        "command": "editor.action.goToTypeDefinition"
+                                                    },
+                                                    {
+                                                        "key": "I",
+                                                        "name": "Find implementations",
+                                                        "icon": "symbol-module",
+                                                        "type": "command",
+                                                        "command": "references-view.findImplementations"
+                                                    },
+                                                    {
+                                                        "key": "R",
+                                                        "name": "Find references",
+                                                        "icon": "symbol-reference",
+                                                        "type": "command",
+                                                        "command": "references-view.findReferences"
+                                                    },
+                                                    {
+                                                        "key": "S",
+                                                        "name": "Go to symbol in project",
+                                                        "icon": "project",
+                                                        "type": "command",
+                                                        "command": "workbench.action.showAllSymbols"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "key": "G",
+                                                "name": "+Peek",
+                                                "icon": "eye",
+                                                "type": "bindings",
+                                                "bindings": [
+                                                    {
+                                                        "key": "d",
+                                                        "name": "Peek definition",
+                                                        "icon": "symbol-function",
+                                                        "type": "command",
+                                                        "command": "editor.action.peekDefinition"
+                                                    },
+                                                    {
+                                                        "key": "h",
+                                                        "name": "Peek call hierarchy",
+                                                        "icon": "type-hierarchy",
+                                                        "type": "command",
+                                                        "command": "editor.showCallHierarchy"
+                                                    },
+                                                    {
+                                                        "key": "i",
+                                                        "name": "Peek implementations",
+                                                        "icon": "symbol-module",
+                                                        "type": "command",
+                                                        "command": "editor.action.peekImplementation"
+                                                    },
+                                                    {
+                                                        "key": "r",
+                                                        "name": "Peek references",
+                                                        "icon": "symbol-reference",
+                                                        "type": "command",
+                                                        "command": "editor.action.referenceSearch.trigger"
+                                                    },
+                                                    {
+                                                        "key": "t",
+                                                        "name": "Peek type definition",
+                                                        "icon": "symbol-struct",
+                                                        "type": "command",
+                                                        "command": "editor.action.peekTypeDefinition"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "key": "t",
+                                                "name": "+Test",
+                                                "icon": "beaker",
+                                                "type": "bindings",
+                                                "bindings": [
+                                                    {
+                                                        "key": "a",
+                                                        "name": "Run all tests",
+                                                        "icon": "beaker",
+                                                        "type": "command",
+                                                        "command": "testing.runAll"
+                                                    },
+                                                    {
+                                                        "key": "A",
+                                                        "name": "Debug all tests",
+                                                        "icon": "bug",
+                                                        "type": "command",
+                                                        "command": "testing.debugAll"
+                                                    },
+                                                    {
+                                                        "key": "b",
+                                                        "name": "Run current test file",
+                                                        "icon": "file",
+                                                        "type": "command",
+                                                        "command": "testing.runCurrentFile"
+                                                    },
+                                                    {
+                                                        "key": "B",
+                                                        "name": "Debug current test file",
+                                                        "icon": "bug",
+                                                        "type": "command",
+                                                        "command": "testing.debugCurrentFile"
+                                                    },
+                                                    {
+                                                        "key": "c",
+                                                        "name": "Coverage test at cursor",
+                                                        "icon": "coverage",
+                                                        "type": "command",
+                                                        "command": "testing.coverageAtCursor"
+                                                    },
+                                                    {
+                                                        "key": "C",
+                                                        "name": "Coverage all tests",
+                                                        "icon": "coverage",
+                                                        "type": "command",
+                                                        "command": "testing.coverageAll"
+                                                    },
+                                                    {
+                                                        "key": "d",
+                                                        "name": "Discover/refresh tests",
+                                                        "icon": "refresh",
+                                                        "type": "command",
+                                                        "command": "testing.refreshTests"
+                                                    },
+                                                    {
+                                                        "key": "f",
+                                                        "name": "Go to related test",
+                                                        "icon": "beaker",
+                                                        "type": "command",
+                                                        "command": "testing.goToRelatedTest"
+                                                    },
+                                                    {
+                                                        "key": "F",
+                                                        "name": "Go to related code",
+                                                        "icon": "code",
+                                                        "type": "command",
+                                                        "command": "testing.goToRelatedCode"
+                                                    },
+                                                    {
+                                                        "key": "l",
+                                                        "name": "Re-run last tests",
+                                                        "icon": "history",
+                                                        "type": "command",
+                                                        "command": "testing.reRunLastRun"
+                                                    },
+                                                    {
+                                                        "key": "L",
+                                                        "name": "Debug last tests",
+                                                        "icon": "bug",
+                                                        "type": "command",
+                                                        "command": "testing.debugLastRun"
+                                                    },
+                                                    {
+                                                        "key": "o",
+                                                        "name": "Show test output",
+                                                        "icon": "output",
+                                                        "type": "command",
+                                                        "command": "testing.showMostRecentOutput"
+                                                    },
+                                                    {
+                                                        "key": "p",
+                                                        "name": "Configure test profiles",
+                                                        "icon": "settings-gear",
+                                                        "type": "command",
+                                                        "command": "testing.configureProfile"
+                                                    },
+                                                    {
+                                                        "key": "r",
+                                                        "name": "Re-run failed tests",
+                                                        "icon": "close",
+                                                        "type": "command",
+                                                        "command": "testing.reRunFailTests"
+                                                    },
+                                                    {
+                                                        "key": "R",
+                                                        "name": "Debug failed tests",
+                                                        "icon": "bug",
+                                                        "type": "command",
+                                                        "command": "testing.debugFailTests"
+                                                    },
+                                                    {
+                                                        "key": "s",
+                                                        "name": "Stop/cancel test run",
+                                                        "icon": "debug-stop",
+                                                        "type": "command",
+                                                        "command": "testing.cancelRun"
+                                                    },
+                                                    {
+                                                        "key": "t",
+                                                        "name": "Run test at cursor",
+                                                        "icon": "play",
+                                                        "type": "command",
+                                                        "command": "testing.runAtCursor"
+                                                    },
+                                                    {
+                                                        "key": "T",
+                                                        "name": "Debug test at cursor",
+                                                        "icon": "bug",
+                                                        "type": "command",
+                                                        "command": "testing.debugAtCursor"
+                                                    },
+                                                    {
+                                                        "key": "x",
+                                                        "name": "Clear test results",
+                                                        "icon": "clear-all",
+                                                        "type": "command",
+                                                        "command": "testing.clearTestResults"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
                                         "key": "languageId:julia",
                                         "name": "Julia",
                                         "type": "bindings",
@@ -10876,6 +11181,311 @@
                                     {
                                         "key": "languageId:typescript",
                                         "name": "TypeScript",
+                                        "type": "bindings",
+                                        "bindings": [
+                                            {
+                                                "key": "=",
+                                                "name": "+Format",
+                                                "icon": "list-flat",
+                                                "type": "bindings",
+                                                "bindings": [
+                                                    {
+                                                        "key": "=",
+                                                        "name": "Format region or buffer",
+                                                        "icon": "list-flat",
+                                                        "type": "command",
+                                                        "command": "editor.action.format"
+                                                    },
+                                                    {
+                                                        "key": "b",
+                                                        "name": "Format buffer",
+                                                        "icon": "file",
+                                                        "type": "command",
+                                                        "command": "editor.action.formatDocument"
+                                                    },
+                                                    {
+                                                        "key": "c",
+                                                        "name": "Format changes",
+                                                        "icon": "diff",
+                                                        "type": "command",
+                                                        "command": "editor.action.formatChanges"
+                                                    },
+                                                    {
+                                                        "key": "s",
+                                                        "name": "Format selection",
+                                                        "icon": "selection",
+                                                        "type": "command",
+                                                        "command": "editor.action.formatSelection"
+                                                    },
+                                                    {
+                                                        "key": "B",
+                                                        "name": "+Format buffer with formatter",
+                                                        "icon": "file",
+                                                        "type": "command",
+                                                        "command": "editor.action.formatDocument.multiple"
+                                                    },
+                                                    {
+                                                        "key": "S",
+                                                        "name": "+Format selection with formatter",
+                                                        "icon": "selection",
+                                                        "type": "command",
+                                                        "command": "editor.action.formatSelection.multiple"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "key": "g",
+                                                "name": "+Go to",
+                                                "icon": "go-to-file",
+                                                "type": "bindings",
+                                                "bindings": [
+                                                    {
+                                                        "key": "d",
+                                                        "name": "Go to definition",
+                                                        "icon": "symbol-function",
+                                                        "type": "command",
+                                                        "command": "editor.action.revealDefinition"
+                                                    },
+                                                    {
+                                                        "key": "h",
+                                                        "name": "Show call hierarchy",
+                                                        "icon": "type-hierarchy",
+                                                        "type": "command",
+                                                        "command": "references-view.showCallHierarchy"
+                                                    },
+                                                    {
+                                                        "key": "r",
+                                                        "name": "Go to reference",
+                                                        "icon": "symbol-reference",
+                                                        "type": "command",
+                                                        "command": "editor.action.goToReferences"
+                                                    },
+                                                    {
+                                                        "key": "s",
+                                                        "name": "Go to symbol in buffer",
+                                                        "icon": "file",
+                                                        "type": "command",
+                                                        "command": "workbench.action.gotoSymbol"
+                                                    },
+                                                    {
+                                                        "key": "t",
+                                                        "name": "Go to type definition",
+                                                        "icon": "symbol-struct",
+                                                        "type": "command",
+                                                        "command": "editor.action.goToTypeDefinition"
+                                                    },
+                                                    {
+                                                        "key": "I",
+                                                        "name": "Find implementations",
+                                                        "icon": "symbol-module",
+                                                        "type": "command",
+                                                        "command": "references-view.findImplementations"
+                                                    },
+                                                    {
+                                                        "key": "R",
+                                                        "name": "Find references",
+                                                        "icon": "symbol-reference",
+                                                        "type": "command",
+                                                        "command": "references-view.findReferences"
+                                                    },
+                                                    {
+                                                        "key": "S",
+                                                        "name": "Go to symbol in project",
+                                                        "icon": "project",
+                                                        "type": "command",
+                                                        "command": "workbench.action.showAllSymbols"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "key": "G",
+                                                "name": "+Peek",
+                                                "icon": "eye",
+                                                "type": "bindings",
+                                                "bindings": [
+                                                    {
+                                                        "key": "d",
+                                                        "name": "Peek definition",
+                                                        "icon": "symbol-function",
+                                                        "type": "command",
+                                                        "command": "editor.action.peekDefinition"
+                                                    },
+                                                    {
+                                                        "key": "h",
+                                                        "name": "Peek call hierarchy",
+                                                        "icon": "type-hierarchy",
+                                                        "type": "command",
+                                                        "command": "editor.showCallHierarchy"
+                                                    },
+                                                    {
+                                                        "key": "i",
+                                                        "name": "Peek implementations",
+                                                        "icon": "symbol-module",
+                                                        "type": "command",
+                                                        "command": "editor.action.peekImplementation"
+                                                    },
+                                                    {
+                                                        "key": "r",
+                                                        "name": "Peek references",
+                                                        "icon": "symbol-reference",
+                                                        "type": "command",
+                                                        "command": "editor.action.referenceSearch.trigger"
+                                                    },
+                                                    {
+                                                        "key": "t",
+                                                        "name": "Peek type definition",
+                                                        "icon": "symbol-struct",
+                                                        "type": "command",
+                                                        "command": "editor.action.peekTypeDefinition"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "key": "t",
+                                                "name": "+Test",
+                                                "icon": "beaker",
+                                                "type": "bindings",
+                                                "bindings": [
+                                                    {
+                                                        "key": "a",
+                                                        "name": "Run all tests",
+                                                        "icon": "beaker",
+                                                        "type": "command",
+                                                        "command": "testing.runAll"
+                                                    },
+                                                    {
+                                                        "key": "A",
+                                                        "name": "Debug all tests",
+                                                        "icon": "bug",
+                                                        "type": "command",
+                                                        "command": "testing.debugAll"
+                                                    },
+                                                    {
+                                                        "key": "b",
+                                                        "name": "Run current test file",
+                                                        "icon": "file",
+                                                        "type": "command",
+                                                        "command": "testing.runCurrentFile"
+                                                    },
+                                                    {
+                                                        "key": "B",
+                                                        "name": "Debug current test file",
+                                                        "icon": "bug",
+                                                        "type": "command",
+                                                        "command": "testing.debugCurrentFile"
+                                                    },
+                                                    {
+                                                        "key": "c",
+                                                        "name": "Coverage test at cursor",
+                                                        "icon": "coverage",
+                                                        "type": "command",
+                                                        "command": "testing.coverageAtCursor"
+                                                    },
+                                                    {
+                                                        "key": "C",
+                                                        "name": "Coverage all tests",
+                                                        "icon": "coverage",
+                                                        "type": "command",
+                                                        "command": "testing.coverageAll"
+                                                    },
+                                                    {
+                                                        "key": "d",
+                                                        "name": "Discover/refresh tests",
+                                                        "icon": "refresh",
+                                                        "type": "command",
+                                                        "command": "testing.refreshTests"
+                                                    },
+                                                    {
+                                                        "key": "f",
+                                                        "name": "Go to related test",
+                                                        "icon": "beaker",
+                                                        "type": "command",
+                                                        "command": "testing.goToRelatedTest"
+                                                    },
+                                                    {
+                                                        "key": "F",
+                                                        "name": "Go to related code",
+                                                        "icon": "code",
+                                                        "type": "command",
+                                                        "command": "testing.goToRelatedCode"
+                                                    },
+                                                    {
+                                                        "key": "l",
+                                                        "name": "Re-run last tests",
+                                                        "icon": "history",
+                                                        "type": "command",
+                                                        "command": "testing.reRunLastRun"
+                                                    },
+                                                    {
+                                                        "key": "L",
+                                                        "name": "Debug last tests",
+                                                        "icon": "bug",
+                                                        "type": "command",
+                                                        "command": "testing.debugLastRun"
+                                                    },
+                                                    {
+                                                        "key": "o",
+                                                        "name": "Show test output",
+                                                        "icon": "output",
+                                                        "type": "command",
+                                                        "command": "testing.showMostRecentOutput"
+                                                    },
+                                                    {
+                                                        "key": "p",
+                                                        "name": "Configure test profiles",
+                                                        "icon": "settings-gear",
+                                                        "type": "command",
+                                                        "command": "testing.configureProfile"
+                                                    },
+                                                    {
+                                                        "key": "r",
+                                                        "name": "Re-run failed tests",
+                                                        "icon": "close",
+                                                        "type": "command",
+                                                        "command": "testing.reRunFailTests"
+                                                    },
+                                                    {
+                                                        "key": "R",
+                                                        "name": "Debug failed tests",
+                                                        "icon": "bug",
+                                                        "type": "command",
+                                                        "command": "testing.debugFailTests"
+                                                    },
+                                                    {
+                                                        "key": "s",
+                                                        "name": "Stop/cancel test run",
+                                                        "icon": "debug-stop",
+                                                        "type": "command",
+                                                        "command": "testing.cancelRun"
+                                                    },
+                                                    {
+                                                        "key": "t",
+                                                        "name": "Run test at cursor",
+                                                        "icon": "play",
+                                                        "type": "command",
+                                                        "command": "testing.runAtCursor"
+                                                    },
+                                                    {
+                                                        "key": "T",
+                                                        "name": "Debug test at cursor",
+                                                        "icon": "bug",
+                                                        "type": "command",
+                                                        "command": "testing.debugAtCursor"
+                                                    },
+                                                    {
+                                                        "key": "x",
+                                                        "name": "Clear test results",
+                                                        "icon": "clear-all",
+                                                        "type": "command",
+                                                        "command": "testing.clearTestResults"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "key": "languageId:typescriptreact",
+                                        "name": "TypeScript React",
                                         "type": "bindings",
                                         "bindings": [
                                             {
